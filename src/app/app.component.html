@@ -20,10 +20,11 @@
 
 <hr><hr><hr>
 
-<table>
-<tr>
-  <td *ngFor='let idx of bars'>
-    <div [ngStyle]="{'background-color': colorChoice, 'display': 'inline-block', 'width': '20px', 'height': '40px'}">
-    </div>
-  </td>
+<table [ngStyle]="{'border-style': 'solid', 'border': '4px solid black'}">
+  <tr>
+    <td *ngFor='let idx of bars'>
+      <div [ngStyle]="{'background-color': colorChoice(), 'display': 'inline-block', 'width': '35px', 'height': '180px'}">
+      </div>
+    </td>
+  </tr>
 </table>

@@ -163,5 +163,6 @@ export class AppComponent {
 
   colorChoice = () => this.colors[Math.floor(Math.random() * this.colors.length)];
 
-  bars = Array.from(Array(12).keys());
+  bars = ['_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_', '_'];
+  
 }
