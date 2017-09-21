@@ -21,11 +21,9 @@
 <hr><hr><hr>
 
 <table>
-  <tr>
-    <td *ngFor='let idx in [0,1,2,3,4,5]'>
-      {{ idx }}
-      <!-- <div class='bars' [ngStyle]="{'background-color': getColor}"> -->
-      <!-- </div> -->
-    </td>
-  </tr>
+<tr>
+  <td *ngFor='let idx of bars'>
+    <div [ngStyle]="{'background-color': colorChoice, 'display': 'inline-block', 'width': '20px', 'height': '40px'}">
+    </div>
+  </td>
 </table>

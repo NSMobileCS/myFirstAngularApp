@@ -1,6 +1,6 @@
 .bars{
     height: 100px;
     width: 35px;
-    margin: -1px;
+    margin: 0px;
     display: inline-block;
 }
