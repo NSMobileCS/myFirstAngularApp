@@ -13,13 +13,14 @@
     <td>{{ message.from | lowercase }}</td>
     <td *ngIf="message.priority">High!</td>
     <td *ngIf="!message.priority">Normal</td>
-    <td>{{ message.from }}</td>
-    <td>{{ message.from }}</td>    
+    <td>{{ message.subject }}</td>
+    <td>{{ message.content }}</td>    
   </tr>
 </table>
 
 <hr><hr><hr>
-
+<div></div>
+<hr><hr><hr>
 <table [ngStyle]="{'border-style': 'solid', 'border': '4px solid black'}">
   <tr>
     <td *ngFor='let idx of bars'>
@@ -28,3 +29,16 @@
     </td>
   </tr>
 </table>
+
+<hr><hr><hr>
+<div></div>
+<hr><hr><hr>
+
+<form (submit)="updateMethod()">
+  <input type='text' name='name' [(ngModel)]='user.name'>
+  <input type='text' name='email' [(ngModel)]='user.email'>
+  <input type='submit'>
+</form>
+<hr><hr><hr>
+<div></div>
+<hr><hr><hr>
